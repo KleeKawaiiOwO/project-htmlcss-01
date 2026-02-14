@@ -43,9 +43,10 @@ a {
 }
 
 .heading.lv2 {
-    font-size: 3.8rem;
-    line-height: 1.26;
+    font-size: 4.2rem;
+    line-height: 1.33;
 }
+
 .btn {
     display: inline-block;
     min-width: 108px;
@@ -324,11 +325,11 @@ a {
     bottom: 41px;
 }
 
-.avatar-group {
+.card-students .avatar-group {
     display: flex;
 }
 
-.avatar-frame {
+.card-students .avatar-frame {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -340,28 +341,115 @@ a {
     transition: all 0.3s ease;
 }
 
-.avatar-frame:hover {
+.card-students .avatar-frame:hover {
     transform: translateY(-5px) scale(1.1);
     z-index: 10;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.avatar-frame + .avatar-frame {
+.card-students .avatar-frame + .avatar-frame {
     margin-left: -5px;
 }
 
-.avatar-frame:nth-child(2) {
+.card-students .avatar-frame:nth-child(2) {
     background: #ffc147;
 }
 
-.avatar-frame:nth-child(3) {
+.card-students .avatar-frame:nth-child(3) {
     background: #ff947a;
 }
 
-.avatar-frame:nth-child(4) {
+.card-students .avatar-frame:nth-child(4) {
     background: #bf83ff;
 }
 
-.avatar-frame .quantity {
+.card-students .avatar-frame .quantity {
     color: #fff;
+}
+
+/* Features */
+.features {
+    margin: 130px 0;
+    padding-left: 130px;
+    max-width: 1024px;
+}
+
+.features-top {
+    width: 590px;
+}
+
+.features-top .label {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.features-top .desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.features-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    border-radius: 5px;
+    padding: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px) scale(1.1);
+    z-index: 10;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item:nth-child(1) {
+    max-width: 178px;
+}
+
+.feature-item:nth-child(2) {
+    max-width: 234px;
+}
+
+.feature-item:nth-child(3) {
+    max-width: 233px;
+}
+
+.feature-item .thumb {
+    width: 102px;
+    height: 106px;
+}
+
+.feature-item .thumb .icon {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.feature-item .title {
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.feature-item .desc {
+    color: #9da6a5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.68;
 }
