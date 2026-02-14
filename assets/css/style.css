@@ -32,6 +32,20 @@ a {
     justify-content: space-between;
 }
 
+.heading {
+    color: #0d1111;
+    font-weight: 700;
+}
+
+.heading.lv1 {
+    font-size: 6.2rem;
+    line-height: 1.16;
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
 .btn {
     display: inline-block;
     min-width: 108px;
@@ -42,7 +56,7 @@ a {
     text-align: center;
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 1.75;
+    line-height: 1.5;
     transition: all 0.3s ease;
 }
 
@@ -53,8 +67,52 @@ a {
     cursor: pointer;
 }
 
+.cta-btn,
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-btn {
+    min-width: 186px;
+    padding: 20px 40px;
+    border-radius: 14px;
+    background: var(--primary-color);
+    color: #fff;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
 .signup-btn {
     border: 1px solid var(--primary-color);
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+.no-break {
+    white-space: nowrap;
 }
 
 /* Header */
@@ -90,4 +148,220 @@ a {
 
 .nav li.active a {
     font-weight: 600;
+}
+
+/* Hero */
+.hero {
+    padding: 50px 0;
+}
+
+.hero .content-block {
+    width: 51%;
+}
+
+.hero .label {
+    color: #767e7e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.hero .desc {
+    max-width: 374px;
+    color: #9da6a5;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.77;
+}
+
+.hero .cta-group {
+    display: flex;
+    margin: 32px 0;
+}
+
+.hero-btn {
+    margin-right: 50px;
+}
+
+.hero .play-btn {
+    background: red;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.hero .play-btn:hover {
+    background: #e3f2f2;
+    opacity: 0.8;
+}
+
+.play-btn .icon {
+    box-shadow: 0 22px 50px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero .media-block .img {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero .media-block {
+    position: relative;
+    width: 49%;
+    background: #e0f7f6;
+}
+
+.hero .hero-card {
+    position: absolute;
+    padding: 18px 25px;
+    background: #fefefd;
+    border-radius: 18px;
+    box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero-card .label,
+.hero-card .quantity {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.card-course {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    left: -40px;
+    top: 149px;
+}
+
+.card-course .icon {
+    position: relative;
+}
+
+.card-course .icon img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-course .icon::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    border-radius: 999px;
+}
+
+.card-schedules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+    gap: 12px;
+    left: -63px;
+    bottom: 46px;
+}
+
+.card-schedules .label {
+    text-align: center;
+}
+
+.card-schedules .row {
+    width: 74px;
+    height: 6px;
+    background: #edf1f5;
+    border-radius: 999px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-schedules .row + .row {
+    margin-top: 10px;
+}
+
+.card-schedules .row:last-child {
+    width: 26px;
+    height: 6px;
+    border-radius: 3px;
+    background: #edf1f5;
+    margin: 12px auto 0;
+}
+
+.card-schedules .row:not(:last-child)::after {
+    content: "";
+    background: #fb9899;
+    display: block;
+    width: 60%;
+    height: 100%;
+}
+
+.card-schedules .row:nth-child(1)::after {
+    width: 39%;
+}
+
+.card-schedules .row:nth-child(2)::after {
+    width: 51%;
+}
+.card-schedules .row:nth-child(3)::after {
+    width: 33%;
+}
+
+.card-students {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+    gap: 8px;
+    right: 45px;
+    bottom: 41px;
+}
+
+.avatar-group {
+    display: flex;
+}
+
+.avatar-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.avatar-frame:hover {
+    transform: translateY(-5px) scale(1.1);
+    z-index: 10;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-frame + .avatar-frame {
+    margin-left: -5px;
+}
+
+.avatar-frame:nth-child(2) {
+    background: #ffc147;
+}
+
+.avatar-frame:nth-child(3) {
+    background: #ff947a;
+}
+
+.avatar-frame:nth-child(4) {
+    background: #bf83ff;
+}
+
+.avatar-frame .quantity {
+    color: #fff;
 }
