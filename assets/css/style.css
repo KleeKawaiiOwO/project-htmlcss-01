@@ -88,6 +88,9 @@ a {
     border-radius: 14px;
     background: var(--primary-color);
     color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
     line-height: 1.5;
     transition: all 0.3s ease;
 }
@@ -861,4 +864,27 @@ a {
     .testimonials:hover .avatar-frame:not(.active) {
         animation: orbit 10s linear infinite;
     }
+}
+
+/* CTA */
+.cta {
+    margin-top: 130px;
+    padding: 76px 0 88px;
+    background: #def6f5;
+}
+
+.cta .heading {
+    color: #070707;
+}
+
+.cta .desc {
+    margin-top: 16px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.cta .cta-btn {
+    background: #2ac9bf;
 }
