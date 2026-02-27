@@ -557,6 +557,7 @@ a {
 }
 
 .course-item .thumb {
+    display: inline-block;
     opacity: 0.35;
     background: #d0efed;
 }
