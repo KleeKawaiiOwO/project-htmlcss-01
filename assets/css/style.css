@@ -53,6 +53,13 @@ a {
     line-height: 1.33;
 }
 
+.heading.lv3 {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
 .btn {
     display: inline-block;
     min-width: 108px;
@@ -887,4 +894,61 @@ a {
 
 .cta .cta-btn {
     background: #2ac9bf;
+}
+
+/* Footer */
+.footer {
+    padding-top: 131px;
+    background: #fff;
+}
+
+.footer .row {
+    display: flex;
+}
+
+.footer .row .col {
+    flex-shrink: 0;
+    width: 19.25%;
+}
+
+.footer .row .col:nth-child(1) {
+    width: 23%;
+}
+
+.footer .heading {
+    display: inline-block;
+}
+
+.footer .list {
+    margin-top: 25px;
+}
+
+.footer .list a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.footer .list li:last-child a {
+    margin-bottom: 0;
+}
+
+.footer i {
+    width: 20px;
+    height: 20px;
+    color: #0b120b;
+}
+
+.footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 50px;
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
 }
