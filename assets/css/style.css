@@ -723,6 +723,10 @@ a {
 }
 
 .testimonial-item {
+    display: none;
+}
+
+.testimonial-item.active {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
