@@ -1,4 +1,4 @@
-# 🌸 Besnik - eLearning Landing Page 🌸
+# 🌸 Bensik - eLearning Landing Page 🌸
 
 Dự án 1 trong phần thực hành tại khóa học HTML CSS Pro của F8.
 
